@@ -204,7 +204,7 @@ package body WisiToken.Generate.LR1_Items is
         (Item.Dot = No_Index or else
            ((Prod.LHS = Descriptor.Accept_ID and
                Item.Dot = RHS.Tokens.First_Index)
-              -- Start symbol production with dot before first token.
+              --  Start symbol production with dot before first token.
               or
               Item.Dot /= RHS.Tokens.First_Index));
    end In_Kernel;

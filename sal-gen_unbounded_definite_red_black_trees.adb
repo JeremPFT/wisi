@@ -565,7 +565,7 @@ package body SAL.Gen_Unbounded_Definite_Red_Black_Trees is
          begin
             case Key_Compare (Key, Current_Key) is
             when Equal =>
-                  return Previous (Iterator, (Node, Descending, Right_Done => True, Left_Done => False));
+               return Previous (Iterator, (Node, Descending, Right_Done => True, Left_Done => False));
 
             when Less =>
                if Node.Left = Nil then
@@ -639,7 +639,7 @@ package body SAL.Gen_Unbounded_Definite_Red_Black_Trees is
             when Ascending =>
                case Key_Compare (First, Current_Key) is
                when Equal =>
-                     return (Node, Ascending, Right_Done => False, Left_Done => True);
+                  return (Node, Ascending, Right_Done => False, Left_Done => True);
 
                when Less =>
                   if Node.Left = Nil then
